@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitap Yolculuğum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Kitap Yolculuğum</h1>
+
+    <div id="login-section">
+      <input type="text" id="nameInput" placeholder="Ad Soyadınızı yazın">
+      <button id="loginBtn">Başla</button>
+    </div>
+
+    <div id="content-section" class="hidden">
+      <h2>Hoş geldin, <span id="userName"></span>!</h2>
+
+      <div class="question">
+        <label>📖 Kitabın karakterine mektup yaz:</label>
+        <textarea placeholder="Karaktere neler söylemek isterdin?"></textarea>
+      </div>
+
+      <div class="question">
+        <label>⭐ Bu kitabı öneriyorum/önermiyorum, çünkü...</label>
+        <textarea placeholder="Nedenini açıkla..."></textarea>
+      </div>
+
+      <div class="question">
+        <label>😊 Kitabı bir emojiyle anlat:</label>
+        <input type="text" placeholder="Örn: 😍 📚 😢">
+      </div>
+
+      <div class="question">
+        <label>💫 Kitapta beni en çok etkileyen...</label>
+        <textarea placeholder="Çünkü..."></textarea>
+      </div>
+
+      <button id="finishBtn">Gönder</button>
+      <p id="thanksMsg" class="hidden">🎉 Cevapların kaydedildi! Harika bir okuma yolculuğu geçirdin!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
